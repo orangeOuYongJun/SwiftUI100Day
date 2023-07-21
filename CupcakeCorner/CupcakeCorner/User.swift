@@ -7,11 +7,12 @@
 
 import Foundation
 
-enum CodingKeys: CodingKey {
-    case name
-}
 
 class User: ObservableObject, Codable {
+    enum CodingKeys: CodingKey {
+        case name
+    }
+
     @Published var name = "Paul Hudson"
 
     required init(from decoder: Decoder) throws {
