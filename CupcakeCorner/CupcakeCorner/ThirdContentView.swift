@@ -33,26 +33,26 @@ struct ThirdContentView: View {
 //                }
 //                .disabled(disableForm)
                 Section {
-                    Picker("Select your cake type", selection: $order.type) {
-                        ForEach(Order.types.indices) {
-                            Text(Order.types[$0])
-                        }
-                    }
-                    
-                    Stepper("Number of cakes: \(order.quantity)", value: $order.quantity)
+//                    Picker("Select your cake type", selection: $order.orderStruct.type) {
+//                        ForEach(OrderStruct.types.indices) {
+//                            Text(OrderStruct.types[$0])
+//                        }
+//                    }
+
+                    Stepper("Number of cakes: \(order.orderStruct.quantity)", value: $order.orderStruct.quantity)
                 }
-                
+
                 Section {
                     // this can let the animation for the other 2 toggles
-                    Toggle("Any special requests?", isOn: $order.specialRequestEnabled)
-                    
-                    if order.specialRequestEnabled {
-                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+                    Toggle("Any special requests?", isOn: $order.orderStruct.specialRequestEnabled)
 
-                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                    if order.orderStruct.specialRequestEnabled {
+                        Toggle("Add extra frosting", isOn: $order.orderStruct.extraFrosting)
+
+                        Toggle("Add extra sprinkles", isOn: $order.orderStruct.addSprinkles)
                     }
                 }
-                
+
                 Section {
                     NavigationLink {
                         AddressView(order: order)
