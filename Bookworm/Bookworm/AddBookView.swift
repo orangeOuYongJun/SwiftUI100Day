@@ -35,13 +35,6 @@ struct AddBookView: View {
                 
                 Section {
                     TextEditor(text: $review)
-                    
-//                    Picker("Rating", selection: $rating) {
-//                        ForEach(0..<6) {
-//                            Text(String($0))
-//                        }
-//                    }
-                    
                     RatingView(rating: $rating)
                 } header: {
                     Text("Write a review")
@@ -49,6 +42,11 @@ struct AddBookView: View {
                 
                 Section {
                     Button("Save") {
+                        if title.count == 0
+                            || author.count == 0 {
+                            return
+                        }
+                        
                         let newBook = Book(context: moc)
                         newBook.id = UUID()
                         newBook.title = title
@@ -56,6 +54,7 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
+                        newBook.date = .now
                         
                         try? moc.save()
                         
