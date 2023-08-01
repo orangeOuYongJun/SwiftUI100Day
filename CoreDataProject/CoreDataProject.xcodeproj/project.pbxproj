@@ -11,6 +11,17 @@
 		714ACF0A2A78431300A2B3A8 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF082A78431300A2B3A8 /* Movie+CoreDataProperties.swift */; };
 		714ACF0D2A78497700A2B3A8 /* Wizard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF0B2A78497700A2B3A8 /* Wizard+CoreDataClass.swift */; };
 		714ACF0E2A78497700A2B3A8 /* Wizard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF0C2A78497700A2B3A8 /* Wizard+CoreDataProperties.swift */; };
+		714ACF112A784BC800A2B3A8 /* Ship+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF0F2A784BC800A2B3A8 /* Ship+CoreDataClass.swift */; };
+		714ACF122A784BC800A2B3A8 /* Ship+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF102A784BC800A2B3A8 /* Ship+CoreDataProperties.swift */; };
+		714ACF152A784E0900A2B3A8 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF132A784E0900A2B3A8 /* Singer+CoreDataClass.swift */; };
+		714ACF162A784E0900A2B3A8 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF142A784E0900A2B3A8 /* Singer+CoreDataProperties.swift */; };
+		714ACF1A2A784E7200A2B3A8 /* FirstContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF192A784E7200A2B3A8 /* FirstContentView.swift */; };
+		714ACF1C2A784F0700A2B3A8 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF1B2A784F0700A2B3A8 /* FilteredList.swift */; };
+		714ACF212A798A1D00A2B3A8 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF1D2A798A1D00A2B3A8 /* Country+CoreDataClass.swift */; };
+		714ACF222A798A1D00A2B3A8 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF1E2A798A1D00A2B3A8 /* Country+CoreDataProperties.swift */; };
+		714ACF232A798A1D00A2B3A8 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF1F2A798A1D00A2B3A8 /* Candy+CoreDataClass.swift */; };
+		714ACF242A798A1D00A2B3A8 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF202A798A1D00A2B3A8 /* Candy+CoreDataProperties.swift */; };
+		714ACF262A798C9200A2B3A8 /* SecondContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ACF252A798C9200A2B3A8 /* SecondContentView.swift */; };
 		71CAE2972A71A5EE00EAC30B /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAE2962A71A5EE00EAC30B /* CoreDataProjectApp.swift */; };
 		71CAE2992A71A5EE00EAC30B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAE2982A71A5EE00EAC30B /* ContentView.swift */; };
 		71CAE29B2A71A5F000EAC30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CAE29A2A71A5F000EAC30B /* Assets.xcassets */; };
@@ -24,6 +35,17 @@
 		714ACF082A78431300A2B3A8 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "CoreDataProject/Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		714ACF0B2A78497700A2B3A8 /* Wizard+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Wizard+CoreDataClass.swift"; path = "CoreDataProject/Wizard+CoreDataClass.swift"; sourceTree = "<group>"; };
 		714ACF0C2A78497700A2B3A8 /* Wizard+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Wizard+CoreDataProperties.swift"; path = "CoreDataProject/Wizard+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		714ACF0F2A784BC800A2B3A8 /* Ship+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ship+CoreDataClass.swift"; sourceTree = "<group>"; };
+		714ACF102A784BC800A2B3A8 /* Ship+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ship+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		714ACF132A784E0900A2B3A8 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		714ACF142A784E0900A2B3A8 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		714ACF192A784E7200A2B3A8 /* FirstContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContentView.swift; sourceTree = "<group>"; };
+		714ACF1B2A784F0700A2B3A8 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		714ACF1D2A798A1D00A2B3A8 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		714ACF1E2A798A1D00A2B3A8 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		714ACF1F2A798A1D00A2B3A8 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		714ACF202A798A1D00A2B3A8 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		714ACF252A798C9200A2B3A8 /* SecondContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContentView.swift; sourceTree = "<group>"; };
 		71CAE2932A71A5EE00EAC30B /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CAE2962A71A5EE00EAC30B /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		71CAE2982A71A5EE00EAC30B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +69,14 @@
 		71CAE28A2A71A5EE00EAC30B = {
 			isa = PBXGroup;
 			children = (
+				714ACF1D2A798A1D00A2B3A8 /* Country+CoreDataClass.swift */,
+				714ACF1E2A798A1D00A2B3A8 /* Country+CoreDataProperties.swift */,
+				714ACF1F2A798A1D00A2B3A8 /* Candy+CoreDataClass.swift */,
+				714ACF202A798A1D00A2B3A8 /* Candy+CoreDataProperties.swift */,
+				714ACF132A784E0900A2B3A8 /* Singer+CoreDataClass.swift */,
+				714ACF142A784E0900A2B3A8 /* Singer+CoreDataProperties.swift */,
+				714ACF0F2A784BC800A2B3A8 /* Ship+CoreDataClass.swift */,
+				714ACF102A784BC800A2B3A8 /* Ship+CoreDataProperties.swift */,
 				714ACF0B2A78497700A2B3A8 /* Wizard+CoreDataClass.swift */,
 				714ACF0C2A78497700A2B3A8 /* Wizard+CoreDataProperties.swift */,
 				714ACF072A78431200A2B3A8 /* Movie+CoreDataClass.swift */,
@@ -69,6 +99,9 @@
 			children = (
 				71CAE2962A71A5EE00EAC30B /* CoreDataProjectApp.swift */,
 				71CAE2982A71A5EE00EAC30B /* ContentView.swift */,
+				714ACF192A784E7200A2B3A8 /* FirstContentView.swift */,
+				714ACF252A798C9200A2B3A8 /* SecondContentView.swift */,
+				714ACF1B2A784F0700A2B3A8 /* FilteredList.swift */,
 				71E556A52A71A78B00A79C71 /* DataController.swift */,
 				71E556A72A71A7E800A79C71 /* CoreDataProject.xcdatamodeld */,
 				71CAE29A2A71A5F000EAC30B /* Assets.xcassets */,
@@ -156,13 +189,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				71CAE2992A71A5EE00EAC30B /* ContentView.swift in Sources */,
+				714ACF162A784E0900A2B3A8 /* Singer+CoreDataProperties.swift in Sources */,
 				71E556A62A71A78B00A79C71 /* DataController.swift in Sources */,
+				714ACF232A798A1D00A2B3A8 /* Candy+CoreDataClass.swift in Sources */,
+				714ACF152A784E0900A2B3A8 /* Singer+CoreDataClass.swift in Sources */,
+				714ACF222A798A1D00A2B3A8 /* Country+CoreDataProperties.swift in Sources */,
 				71E556A92A71A7E800A79C71 /* CoreDataProject.xcdatamodeld in Sources */,
+				714ACF1A2A784E7200A2B3A8 /* FirstContentView.swift in Sources */,
+				714ACF1C2A784F0700A2B3A8 /* FilteredList.swift in Sources */,
+				714ACF262A798C9200A2B3A8 /* SecondContentView.swift in Sources */,
+				714ACF122A784BC800A2B3A8 /* Ship+CoreDataProperties.swift in Sources */,
+				714ACF212A798A1D00A2B3A8 /* Country+CoreDataClass.swift in Sources */,
 				714ACF092A78431300A2B3A8 /* Movie+CoreDataClass.swift in Sources */,
 				714ACF0A2A78431300A2B3A8 /* Movie+CoreDataProperties.swift in Sources */,
 				71CAE2972A71A5EE00EAC30B /* CoreDataProjectApp.swift in Sources */,
 				714ACF0E2A78497700A2B3A8 /* Wizard+CoreDataProperties.swift in Sources */,
+				714ACF242A798A1D00A2B3A8 /* Candy+CoreDataProperties.swift in Sources */,
 				714ACF0D2A78497700A2B3A8 /* Wizard+CoreDataClass.swift in Sources */,
+				714ACF112A784BC800A2B3A8 /* Ship+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

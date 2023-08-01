@@ -13,7 +13,9 @@ struct CoreDataProjectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
+//            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
+            FirstContentView().environment(\.managedObjectContext, dataController.container.viewContext)
+//            SecondContentView().environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
