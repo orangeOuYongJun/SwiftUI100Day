@@ -26,6 +26,14 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
     }
 }
 
+struct User: Codable {
+    enum CodingKeys: String, CodingKey {
+        case firstName = "First"
+        case lastName = "Last"
+    }
+    var firstName: String
+    var lastName: String
+}
 //struct FilteredList_Previews: PreviewProvider {
 //    static var previews: some View {
 //        FilteredList(filter: "A")
