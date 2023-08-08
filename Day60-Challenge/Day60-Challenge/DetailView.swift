@@ -8,29 +8,21 @@
 import SwiftUI
 
 struct DetailView: View {
-    @State var user: User
+    @State var user: CachedUser
     
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
                 Section {
-                    Text(user.about)
+                    Text(user.wrappedAbout)
                 } header: {
                     Text("About")
                         .font(.headline)
                 }
                 
                 Section {
-                    Text("\(user.registeredDate)")
-                } header: {
-                    Text("Date")
-                        .font(.headline)
-
-                }
-                
-                Section {
-                    List(user.friends) { friend in
-                        Text(friend.name)
+                    List(user.friendsArray) { friend in
+                        Text(friend.name ?? "")
                     }
                 } header: {
                     Text("Friends")
@@ -38,7 +30,7 @@ struct DetailView: View {
                 }
             }
             .padding()
-            .navigationTitle(Text(user.name))
+            .navigationTitle(Text(user.name ?? ""))
         }
     }
 }

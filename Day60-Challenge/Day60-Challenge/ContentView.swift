@@ -9,21 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     @State var users = [User]()
-    
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var cachedUsers: FetchedResults<CachedUser>
+
     var body: some View {
         NavigationView {
             VStack {
-                List(users) { user in
+                List(cachedUsers) { user in
                     NavigationLink {
                         DetailView(user: user)
                     } label: {
-                        Text(user.name)
+                        Text(user.wrappedName)
                     }
                 }
             }
             .task {
                 if users.count == 0 {
                     await requestData()
+                }
+                
+                await MainActor.run {
+                    for user in users {
+                        let newUser = CachedUser(context: moc)
+                        newUser.name = user.name
+                        newUser.about = user.about
+                        newUser.id = user.id
+                        
+                        for friend in user.friends {
+                            let newFriend = CachedFriend(context: moc)
+                            newFriend.id = friend.id
+                            newFriend.name = friend.name
+                            newFriend.user = newUser
+                        }
+                        
+                        try? moc.save()
+                    }
                 }
             }
         }
