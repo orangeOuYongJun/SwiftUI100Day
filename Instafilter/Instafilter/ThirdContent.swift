@@ -18,7 +18,7 @@ struct ThirdContent: View {
                 }
             }
             .sheet(isPresented: $showingImagePicker) {
-                ImagePicker()
+//                ImagePicker()
             }
         }
     }

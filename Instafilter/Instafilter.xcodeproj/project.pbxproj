@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715672102A86BDEC00B76C9D /* FourthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7156720F2A86BDEC00B76C9D /* FourthContentView.swift */; };
 		71F020B82A841DF40089E77B /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F020B72A841DF40089E77B /* InstafilterApp.swift */; };
 		71F020BA2A841DF40089E77B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F020B92A841DF40089E77B /* ContentView.swift */; };
 		71F020BC2A841DF60089E77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F020BB2A841DF60089E77B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7156720F2A86BDEC00B76C9D /* FourthContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthContentView.swift; sourceTree = "<group>"; };
 		71F020B42A841DF40089E77B /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F020B72A841DF40089E77B /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		71F020B92A841DF40089E77B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				71F020C52A8428680089E77B /* SecondContent.swift */,
 				71F020C92A8435040089E77B /* ThirdContent.swift */,
 				71F020C72A8433380089E77B /* ImagePicker.swift */,
+				7156720F2A86BDEC00B76C9D /* FourthContentView.swift */,
 				71F020BB2A841DF60089E77B /* Assets.xcassets */,
 				71F020BD2A841DF60089E77B /* Preview Content */,
 			);
@@ -150,6 +153,7 @@
 				71F020C82A8433380089E77B /* ImagePicker.swift in Sources */,
 				71F020B82A841DF40089E77B /* InstafilterApp.swift in Sources */,
 				71F020CA2A8435040089E77B /* ThirdContent.swift in Sources */,
+				715672102A86BDEC00B76C9D /* FourthContentView.swift in Sources */,
 				71F020C62A8428680089E77B /* SecondContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
