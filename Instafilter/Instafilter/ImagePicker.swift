@@ -30,6 +30,8 @@ struct ImagePicker: UIViewControllerRepresentable {
                 }
             }
         }
+        
+        
     }
     
     @Binding var image: UIImage?
