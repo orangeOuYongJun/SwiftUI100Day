@@ -49,13 +49,13 @@ struct FourthContent: View {
                                 viewModel.addLocation()
                             } label: {
                                 Image(systemName: "plus")
+                                    .padding()
+                                    .background(.black.opacity(0.75))
+                                    .foregroundColor(.white)
+                                    .font(.title)
+                                    .clipShape(Circle())
+                                    .padding(.trailing)
                             }
-                            .padding()
-                            .background(.black.opacity(0.75))
-                            .foregroundColor(.white)
-                            .font(.title)
-                            .clipShape(Circle())
-                            .padding(.trailing)
                         }
                     }
                 } else {
@@ -77,6 +77,10 @@ struct FourthContent: View {
                     viewModel.update(location: newLocation)
                 }
             }
+            .alert("Authentication failed", isPresented: $viewModel.isAuthenticatedFailed) {
+                
+            }
+                
         }
     }
 }
