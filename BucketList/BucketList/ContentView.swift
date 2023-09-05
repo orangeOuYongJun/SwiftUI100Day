@@ -18,7 +18,7 @@ struct User: Identifiable, Comparable {
 }
 
 enum LoadingState {
-    case loading, success, failed
+    case loading, success, failed, loaded
 }
 
 struct LoadingView: View {
@@ -58,6 +58,8 @@ struct ContentView: View {
                     SuccessView()
                 case .failed:
                     FailedView()
+                default:
+                    Group { }
                 }
             }
         }
