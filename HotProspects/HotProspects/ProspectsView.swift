@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CodeScanner
+import UserNotifications
 
 struct ProspectsView: View {
     
@@ -56,19 +57,28 @@ struct ProspectsView: View {
                     .swipeActions {
                         if prospect.isContacted {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
                             } label: {
                                 Label("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark")
                             }
                             .tint(.blue)
                         } else {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
                             } label: {
                                 Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
                             }
                             .tint(.green)
+                            
+                            Button {
+                                addNotification(for: prospect)
+                            } label: {
+                                Label("Remind Me", systemImage: "bell")
+                            }
+                            .tint(.orange)
+
                         }
+                        
                     }
                 }
             }
@@ -96,9 +106,43 @@ struct ProspectsView: View {
             let person = Prospect()
             person.name = details[0]
             person.emailAddress = details[1]
-            prospects.people.append(person)
+            prospects.add(person)
         case .failure(let error):
             print("Scanning failed: \(error.localizedDescription)")
+        }
+    }
+    
+    func addNotification(for prospect: Prospect) {
+        let center = UNUserNotificationCenter.current()
+        
+        let addRequest = {
+            let content = UNMutableNotificationContent()
+            content.title = "Contact \(prospect.name)"
+            content.subtitle = prospect.emailAddress
+            content.sound = .default
+            
+            var dateComponents = DateComponents()
+            dateComponents.hour = 9
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            
+            let reqeust = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(reqeust)
+        }
+        
+        center.getNotificationSettings { settings in
+            if settings.authorizationStatus == .authorized {
+                addRequest()
+            } else {
+                center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        addRequest()
+                    } else {
+                        print("D'oh")
+
+                    }
+                }
+            }
         }
     }
 }

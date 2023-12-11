@@ -21,6 +21,13 @@
 		C222D93C2AFB0DB000FFB99D /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222D93B2AFB0DB000FFB99D /* MeView.swift */; };
 		C2614C9B2B0538B1004927A2 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2614C9A2B0538B1004927A2 /* Prospect.swift */; };
 		C2614C9E2B0577C0004927A2 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C2614C9D2B0577C0004927A2 /* CodeScanner */; };
+		C2614CA12B0995B5004927A2 /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CA02B0995B5004927A2 /* FacebookAEM */; };
+		C2614CA32B0995B5004927A2 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CA22B0995B5004927A2 /* FacebookBasics */; };
+		C2614CA52B0995B5004927A2 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CA42B0995B5004927A2 /* FacebookCore */; };
+		C2614CA72B0995B5004927A2 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CA62B0995B5004927A2 /* FacebookGamingServices */; };
+		C2614CA92B0995B5004927A2 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CA82B0995B5004927A2 /* FacebookLogin */; };
+		C2614CAB2B0995B5004927A2 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = C2614CAA2B0995B5004927A2 /* FacebookShare */; };
+		C2ABAE732B0AA2F3003053B4 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ABAE722B0AA2F3003053B4 /* ImageSaver.swift */; };
 		C2DC12362AEEF09000BEA12B /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC12352AEEF09000BEA12B /* HotProspectsApp.swift */; };
 		C2DC12382AEEF09000BEA12B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC12372AEEF09000BEA12B /* ContentView.swift */; };
 		C2DC123A2AEEF09100BEA12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DC12392AEEF09100BEA12B /* Assets.xcassets */; };
@@ -42,6 +49,7 @@
 		C222D9392AFB0DA800FFB99D /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		C222D93B2AFB0DB000FFB99D /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		C2614C9A2B0538B1004927A2 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		C2ABAE722B0AA2F3003053B4 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		C2DC12322AEEF09000BEA12B /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DC12352AEEF09000BEA12B /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		C2DC12372AEEF09000BEA12B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +64,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2614CA12B0995B5004927A2 /* FacebookAEM in Frameworks */,
+				C2614CA52B0995B5004927A2 /* FacebookCore in Frameworks */,
+				C2614CAB2B0995B5004927A2 /* FacebookShare in Frameworks */,
+				C2614CA32B0995B5004927A2 /* FacebookBasics in Frameworks */,
+				C2614CA72B0995B5004927A2 /* FacebookGamingServices in Frameworks */,
 				C2614C9E2B0577C0004927A2 /* CodeScanner in Frameworks */,
+				C2614CA92B0995B5004927A2 /* FacebookLogin in Frameworks */,
 				C2140F6A2AF9F3E8002E71AE /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +112,7 @@
 				C222D9392AFB0DA800FFB99D /* ProspectsView.swift */,
 				C2614C9A2B0538B1004927A2 /* Prospect.swift */,
 				C222D93B2AFB0DB000FFB99D /* MeView.swift */,
+				C2ABAE722B0AA2F3003053B4 /* ImageSaver.swift */,
 				C2140F5C2AF9CF4F002E71AE /* ContentView2.swift */,
 				C2DC12392AEEF09100BEA12B /* Assets.xcassets */,
 				C2DC123B2AEEF09100BEA12B /* Preview Content */,
@@ -132,6 +147,12 @@
 			packageProductDependencies = (
 				C2140F692AF9F3E8002E71AE /* SamplePackage */,
 				C2614C9D2B0577C0004927A2 /* CodeScanner */,
+				C2614CA02B0995B5004927A2 /* FacebookAEM */,
+				C2614CA22B0995B5004927A2 /* FacebookBasics */,
+				C2614CA42B0995B5004927A2 /* FacebookCore */,
+				C2614CA62B0995B5004927A2 /* FacebookGamingServices */,
+				C2614CA82B0995B5004927A2 /* FacebookLogin */,
+				C2614CAA2B0995B5004927A2 /* FacebookShare */,
 			);
 			productName = HotProspects;
 			productReference = C2DC12322AEEF09000BEA12B /* HotProspects.app */;
@@ -164,6 +185,7 @@
 			packageReferences = (
 				C2140F682AF9F3E7002E71AE /* XCRemoteSwiftPackageReference "SamplePackage" */,
 				C2614C9C2B0577C0004927A2 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = C2DC12332AEEF09000BEA12B /* Products */;
 			projectDirPath = "";
@@ -194,6 +216,7 @@
 				C2DC12382AEEF09000BEA12B /* ContentView.swift in Sources */,
 				C2DC12362AEEF09000BEA12B /* HotProspectsApp.swift in Sources */,
 				C2140F5F2AF9D477002E71AE /* ContentView3.swift in Sources */,
+				C2ABAE732B0AA2F3003053B4 /* ImageSaver.swift in Sources */,
 				C2140F6C2AF9F452002E71AE /* ContentView8.swift in Sources */,
 				C2140F652AF9E1CB002E71AE /* ContentView6.swift in Sources */,
 				C2DC12462AF1C03A00BEA12B /* MyViews1.swift in Sources */,
@@ -338,6 +361,7 @@
 				DEVELOPMENT_TEAM = PQDY33A3PA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +391,7 @@
 				DEVELOPMENT_TEAM = PQDY33A3PA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,6 +450,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +470,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C2614C9C2B0577C0004927A2 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		C2614CA02B0995B5004927A2 /* FacebookAEM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookAEM;
+		};
+		C2614CA22B0995B5004927A2 /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		C2614CA42B0995B5004927A2 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		C2614CA62B0995B5004927A2 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		C2614CA82B0995B5004927A2 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		C2614CAA2B0995B5004927A2 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2614C9F2B0995B5004927A2 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
